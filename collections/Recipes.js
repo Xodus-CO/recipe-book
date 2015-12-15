@@ -8,9 +8,9 @@ Recipes.allow({
   insert: function(userId, doc) {
     //if you are signed in, you are allowed to insert a recipe
     return !!userId;
-  //},
-  //update: function(userId, doc){
-  //  return !!userId;
+  },
+  update: function(userId, doc){
+    return !!userId;
   }
 });
 
@@ -74,6 +74,9 @@ Meteor.methods({
         inMenu: !currentState
       }
     });
+  },
+  deleteRecipe: function(id) {
+    Recipes.remove(id);
   }
 });
 
