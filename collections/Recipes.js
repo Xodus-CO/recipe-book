@@ -4,6 +4,13 @@
 
 Recipes = new Mongo.Collection('recipes');
 
+Recipes.allow({
+  insert: function(userId, doc) {
+    //if you are signed in, you are allowed to insert a recipe
+    return !!userId;
+  }
+})
+
 RecipeSchema = new SimpleSchema({
   name: {
     type: String,
