@@ -3,16 +3,23 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/lib/routes-compiled.js" />
+        <item url="file://$PROJECT_DIR$/collections/Recipes-compiled.js" />
         <item url="file://$PROJECT_DIR$/client/recipes/recipes-compiled.js" />
         <item url="file://$PROJECT_DIR$/server/publish-compiled.js" />
         <item url="file://$PROJECT_DIR$/client/recipes/RecipeSingle-compiled.js" />
+        <item url="file://$PROJECT_DIR$/client/recipes/recipe-compiled.js" />
+        <item url="file://$PROJECT_DIR$/collections/Recipes-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/server/publish-compiled.js" />
       <root url="file://$PROJECT_DIR$/lib/routes-compiled.js" />
+      <root url="file://$PROJECT_DIR$/collections/Recipes-compiled.js" />
       <root url="file://$PROJECT_DIR$/client/recipes/recipes-compiled.js" />
       <root url="file://$PROJECT_DIR$/server/publish-compiled.js" />
       <root url="file://$PROJECT_DIR$/client/recipes/RecipeSingle-compiled.js" />
+      <root url="file://$PROJECT_DIR$/client/recipes/recipe-compiled.js" />
+      <root url="file://$PROJECT_DIR$/collections/Recipes-compiled.js" />
     </CLASSES>
     <SOURCES />
   </library>
