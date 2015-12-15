@@ -9,7 +9,17 @@ Recipes.allow({
     //if you are signed in, you are allowed to insert a recipe
     return !!userId;
   }
-})
+});
+
+Ingredient = new SimpleSchema({
+  name: {
+    type: String
+  },
+  amount: {
+    type: String
+  }
+
+});
 
 RecipeSchema = new SimpleSchema({
   name: {
@@ -19,6 +29,17 @@ RecipeSchema = new SimpleSchema({
   desc: {
     type: String,
     label: 'Description'
+  },
+  ingredients: {
+    type: [Ingredient]
+  },
+  inMenu :{
+    type: Boolean,
+    defaultValue: false,
+    optional: true,
+    autoform: {
+      type: "hidden"
+    }
   },
   author: {
     type: String,
