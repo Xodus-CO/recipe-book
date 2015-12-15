@@ -8,3 +8,9 @@ Template.Recipe.events({
       console.log('menu item toggled');
   }
 });
+
+Template.Recipe.helpers({
+  updateRecipeId: function(){
+    return this._id;
+  }
+});
