@@ -2,10 +2,15 @@
  * Created by Nathan.Mead on 12/14/2015.
  */
 
-Meteor.subscribe('recipes');
+Template.Recipes.onCreated(function() {
+  var self = this;
+  self.autorun(function() {
+    self.subscribe('recipes');
+  });
+});
 
 Template.Recipes.helpers({
-    recipes:()=> {
-        return Recipes.find({});
-    }
+  recipes: ()=> {
+    return Recipes.find({});
+  }
 });
